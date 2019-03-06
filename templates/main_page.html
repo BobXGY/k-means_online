@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}k-均值聚类计算{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main_page.css') }}">
+{% endblock %}
+
+{% block main_page %}
+<div class="main-container">
+    <div class="form-container">
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" name="k_value" placeholder="输入K值 2-10">
+            </div>
+            <p>在此粘贴你的数据</p>
+            <p>格式x,y 每行一个</p>
+            <div class="form-group">
+                <textarea rows="20" class="form-control" name="input_data" title="input"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="提交数据">
+            </div>
+        </form>
+    </div>
+    <div class="result-container">
+        <img src="{{ pic_path }}">
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+.main-container{
+    width: 880px;
+    margin: 0 auto;
+}
+
+.form-container{
+    max-width: 300px;
+    float: left;
+    margin-left: 30px;
+}
+
+.result-container{
+    float: right;
+}
